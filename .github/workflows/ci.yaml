@@ -24,6 +24,12 @@ jobs:
         run: |
           bun run build
 
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: dist
+
   publish:
     name: Publish to npm
     if: github.event_name == 'push' && github.ref == 'refs/heads/npm-publish'
@@ -31,6 +37,11 @@ jobs:
     needs: build
     steps:
     - uses: actions/checkout@v4
+    - uses: actions/download-artifact@v3
+      name: Download build artifacts
+      with:
+        name: build-artifacts
+        path: dist
     - uses: actions/setup-node@v4
       with:
         node-version: '20'
