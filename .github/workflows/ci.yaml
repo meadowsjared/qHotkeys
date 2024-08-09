@@ -47,7 +47,7 @@ jobs:
         node-version: '20'
         registry-url: 'https://registry.npmjs.org'
     - name: Publish to npm
-      id: publish  # Assign an ID to this step
+      id: publish  # Assign an ID to this step, so we can reference it in the Automated Version Bump
       run: npm publish --access public
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
