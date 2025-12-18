@@ -29,7 +29,7 @@
     "uiohook-napi": "^1.5.4"
   },
   "devDependencies": {
-    "@types/node": "^22.1.0",
-    "typescript": "^5.5.4"
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
   }
 }
