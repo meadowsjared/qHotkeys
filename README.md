@@ -5,21 +5,21 @@ This project utilizes [uiohook-napi](https://npmjs.org/uiohook-napi). It depends
 
 My purpose in creating qHotkeys was to be a replacement for Electron's global shortcut. With qHotkeys you can create a shortcut such as ``CommandOrControl + X`` and your app will still recognize the input AND your os will perform the 'cut' action
 
-This project is early in development. Report any bugs or issues on the [GitHub](https://github.com/qartho/qhotkeys/issues/) issue tracker.
+This project is early in development. Report any bugs or issues on the [GitHub](https://github.com/meadowsjared/qhotkeys/issues/) issue tracker.
 
 ## Installation
 
 Install qHotkeys using npm:
 
 ```
-npm i qhotkeys
+npm i @meadowsjared/qhotkeys
 ```
 
 ## Example Implementation
 
 ```JavaScript
 
-import { qKeys, qHotkeys } from 'qHotkeys'
+import { qKeys, qHotkeys } from '@meadowsjared/qhotkeys'
 
 // Create instance
 var hotkeys = new qHotkeys()
@@ -74,7 +74,9 @@ Anymore ideas? Create an issue on the github page!
 
 ## License
 
-[MIT](https://github.com/QarthO/qHotkeys/blob/main/LICENSE)
+[MIT](https://github.com/meadowsjared/qHotkeys/blob/main/LICENSE)
 
-Maintained by [QarthO](https://github.com/qartho).
+Maintained by [meadowsjared](https://github.com/meadowsjared).
 
+## Credits
+Based on the original work by [QarthO](https://github.com/QarthO).

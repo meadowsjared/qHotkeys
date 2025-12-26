@@ -1,6 +1,6 @@
 {
-  "name": "qhotkeys",
-  "version": "1.1.6",
+  "name": "@meadowsjared/qhotkeys",
+  "version": "1.1.16",
   "description": "Electron global shortcut registrar that doesn't override pre-existing shortcuts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,9 +21,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/qartho/qhotkeys.git"
+    "url": "https://github.com/meadowsjared/qhotkeys.git"
   },
-  "author": "QarthO <qartho@gmail.com> (quartzdev.gg)",
+  "author": "meadowsjared <meadowsjared@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "uiohook-napi": "^1.5.4"
